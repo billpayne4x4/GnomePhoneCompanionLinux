@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.10.3" target_tk="gtk-4.0">
+  <ui>
+	(1,1,"main_window.ui","main_window.ui",None,None,None,None,None,None)
+  </ui>
+  <object>
+	(1,1,"AdwApplicationWindow","MainWindow",None,None,None,None,None),
+	(1,6,"AdwToastOverlay",None,1,None,None,None,None),
+	(1,8,"GtkBox",None,6,None,None,None,1),
+	(1,17,"AdwHeaderBar",None,8,None,None,None,None),
+	(1,29,"AdwViewStack","main_stack",8,None,None,None,1),
+	(1,32,"AdwViewStackPage",None,29,None,None,None,None),
+	(1,33,"AdwViewStackPage",None,29,None,None,None,1),
+	(1,35,"GtkLabel",None,32,None,None,None,None),
+	(1,36,"GtkLabel",None,33,None,None,None,None),
+	(1,48,"GtkSearchEntry",None,17,None,"end",None,3),
+	(1,50,"AdwViewSwitcher",None,17,None,"start",None,None),
+	(1,51,"GtkMenuButton",None,17,None,"end",None,2),
+	(1,52,"GtkLabel",None,17,None,"title",None,1),
+	(1,53,"GtkPopover","main_menu",None,None,None,None,None)
+  </object>
+  <object_property>
+	(1,1,"GtkWindow","default-height","768",None,None,None,None,None),
+	(1,1,"GtkWindow","default-width","1024",None,None,None,None,None),
+	(1,8,"GtkOrientable","orientation","vertical",None,None,None,None,None),
+	(1,8,"GtkWidget","hexpand","True",None,None,None,None,None),
+	(1,8,"GtkWidget","vexpand","True",None,None,None,None,None),
+	(1,17,"AdwHeaderBar","title-widget","38",None,None,None,None,None),
+	(1,17,"GtkWidget","hexpand","True",None,None,None,None,None),
+	(1,32,"AdwViewStackPage","child",None,None,None,None,None,35),
+	(1,32,"AdwViewStackPage","icon-name","avatar-default-symbolic",None,None,None,None,None),
+	(1,33,"AdwViewStackPage","badge-number","3",None,None,None,None,None),
+	(1,33,"AdwViewStackPage","child",None,None,None,None,None,36),
+	(1,33,"AdwViewStackPage","icon-name","user-available-symbolic",None,None,None,None,None),
+	(1,35,"GtkLabel","label","Contacts",None,None,None,None,None),
+	(1,36,"GtkLabel","label","Messages",None,None,None,None,None),
+	(1,50,"AdwViewSwitcher","policy","wide",None,None,None,None,None),
+	(1,50,"AdwViewSwitcher","stack","29",None,None,None,None,None),
+	(1,50,"GtkWidget","halign","start",None,None,None,None,None),
+	(1,50,"GtkWidget","overflow","hidden",None,None,None,None,None),
+	(1,51,"GtkMenuButton","icon-name","open-menu-symbolic",None,None,None,None,None),
+	(1,51,"GtkMenuButton","popover","53",None,None,None,None,None),
+	(1,52,"GtkLabel","label","Gnome Phone Companion",None,None,None,None,None)
+  </object_property>
+</cambalache-project>

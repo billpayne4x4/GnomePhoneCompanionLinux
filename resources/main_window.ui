@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.10.3 -->
+<interface>
+  <!-- interface-name main_window.ui -->
+  <requires lib="gtk" version="4.6"/>
+  <requires lib="libadwaita" version="1.1"/>
+  <template class="MainWindow" parent="AdwApplicationWindow">
+    <property name="default-height">768</property>
+    <property name="default-width">1024</property>
+    <child>
+      <object class="AdwToastOverlay">
+        <child>
+          <object class="GtkBox">
+            <property name="hexpand">True</property>
+            <property name="orientation">vertical</property>
+            <property name="vexpand">True</property>
+            <child>
+              <object class="AdwHeaderBar">
+                <property name="hexpand">True</property>
+                <child type="start">
+                  <object class="AdwViewSwitcher">
+                    <property name="halign">start</property>
+                    <property name="overflow">hidden</property>
+                    <property name="policy">wide</property>
+                    <property name="stack">main_stack</property>
+                  </object>
+                </child>
+                <child type="title">
+                  <object class="GtkLabel">
+                    <property name="label">Gnome Phone Companion</property>
+                  </object>
+                </child>
+                <child type="end">
+                  <object class="GtkMenuButton">
+                    <property name="icon-name">open-menu-symbolic</property>
+                    <property name="popover">main_menu</property>
+                  </object>
+                </child>
+                <child type="end">
+                  <object class="GtkSearchEntry"/>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="AdwViewStack" id="main_stack">
+                <child>
+                  <object class="AdwViewStackPage">
+                    <property name="child">
+                      <object class="GtkLabel">
+                        <property name="label">Contacts</property>
+                      </object>
+                    </property>
+                    <property name="icon-name">avatar-default-symbolic</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="AdwViewStackPage">
+                    <property name="badge-number">3</property>
+                    <property name="child">
+                      <object class="GtkLabel">
+                        <property name="label">Messages</property>
+                      </object>
+                    </property>
+                    <property name="icon-name">user-available-symbolic</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+  <object class="GtkPopover" id="main_menu"/>
+</interface>

@@ -1,0 +1,16 @@
+[package]
+name = "gnome-phone-companion"
+version = "0.1.0"
+edition = "2021"
+authors = ["bill <billpayne4x4@gmail.com>"]
+description = "A GNOME application for managing your phone"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+gtk = { version = "*", package = "gtk4" }
+adw = { version = "*", package = "libadwaita"}
+
+[build-dependencies]
+gio = "*"
+

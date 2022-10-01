@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+    <gresource prefix="/org/bil4x4/gnome-phone-companion/">
+        <file compressed="true" preprocess="xml-stripblanks">main_window.ui</file>
+        <file compressed="true" preprocess="xml-stripblanks">window.ui</file>
+        <file compressed="true" preprocess="xml-stripblanks">shortcuts.ui</file>
+    </gresource>
+</gresources>
