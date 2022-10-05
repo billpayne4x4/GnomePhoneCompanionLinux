@@ -8,9 +8,10 @@ description = "A GNOME application for managing your phone"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-gtk = { version = "*", package = "gtk4" }
-adw = { version = "*", package = "libadwaita"}
+gtk = { version = "0.4.8", package = "gtk4" }
+adw = { version = "0.1.1", package = "libadwaita"}
+#derive-new = "0.5.9"
 
 [build-dependencies]
-gio = "*"
+gio = "0.15.12"
 

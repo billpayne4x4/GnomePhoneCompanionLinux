@@ -1,7 +1,7 @@
 mod ui;
 
 use adw::prelude::*;
-use gtk::gio;
+use adw::gtk::gio;
 use ui::main_window::MainWindow;
 
 const APP_ID: &str = "org.bil4x4.gnome-phone-companion";

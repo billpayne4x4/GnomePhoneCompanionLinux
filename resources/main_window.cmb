@@ -2,7 +2,8 @@
 <!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
 <cambalache-project version="0.10.3" target_tk="gtk-4.0">
   <ui>
-	(1,1,"main_window.ui","main_window.ui",None,None,None,None,None,None)
+	(1,1,"main_window.ui","main_window.ui",None,None,None,None,None,None),
+	(2,None,None,"contacts_container.ui",None,None,None,None,None,None)
   </ui>
   <object>
 	(1,1,"AdwApplicationWindow","MainWindow",None,None,None,None,None),
@@ -12,13 +13,23 @@
 	(1,29,"AdwViewStack","main_stack",8,None,None,None,1),
 	(1,32,"AdwViewStackPage",None,29,None,None,None,None),
 	(1,33,"AdwViewStackPage",None,29,None,None,None,1),
-	(1,35,"GtkLabel",None,32,None,None,None,None),
-	(1,36,"GtkLabel",None,33,None,None,None,None),
 	(1,48,"GtkSearchEntry",None,17,None,"end",None,3),
 	(1,50,"AdwViewSwitcher",None,17,None,"start",None,None),
 	(1,51,"GtkMenuButton",None,17,None,"end",None,2),
-	(1,52,"GtkLabel",None,17,None,"title",None,1),
-	(1,53,"GtkPopover","main_menu",None,None,None,None,None)
+	(1,53,"GtkPopover","main_menu",None,None,None,None,None),
+	(1,54,"AdwLeafletPage",None,None,None,None,None,None),
+	(1,55,"AdwWindowTitle",None,17,None,"title",None,1),
+	(1,56,"GtkBox","contacts_placeholder",32,None,None,None,None),
+	(1,57,"GtkBox","messages_placeholder",33,None,None,None,None),
+	(2,16,"GtkBox",None,None,None,None,None,None),
+	(2,17,"AdwLeaflet","leaflet",16,None,None,None,None),
+	(2,18,"GtkListBox",None,17,None,None,None,None),
+	(2,19,"AdwActionRow",None,18,None,None,None,None),
+	(2,20,"AdwActionRow",None,18,None,None,None,1),
+	(2,21,"AdwActionRow",None,18,None,None,None,2),
+	(2,22,"AdwLeafletPage",None,17,None,None,None,1),
+	(2,23,"GtkSeparator",None,22,None,None,None,None),
+	(2,24,"GtkLabel",None,17,None,None,None,2)
   </object>
   <object_property>
 	(1,1,"GtkWindow","default-height","768",None,None,None,None,None),
@@ -28,19 +39,33 @@
 	(1,8,"GtkWidget","vexpand","True",None,None,None,None,None),
 	(1,17,"AdwHeaderBar","title-widget","38",None,None,None,None,None),
 	(1,17,"GtkWidget","hexpand","True",None,None,None,None,None),
-	(1,32,"AdwViewStackPage","child",None,None,None,None,None,35),
+	(1,32,"AdwViewStackPage","child",None,None,None,None,None,56),
 	(1,32,"AdwViewStackPage","icon-name","avatar-default-symbolic",None,None,None,None,None),
 	(1,33,"AdwViewStackPage","badge-number","3",None,None,None,None,None),
-	(1,33,"AdwViewStackPage","child",None,None,None,None,None,36),
+	(1,33,"AdwViewStackPage","child",None,None,None,None,None,57),
 	(1,33,"AdwViewStackPage","icon-name","user-available-symbolic",None,None,None,None,None),
-	(1,35,"GtkLabel","label","Contacts",None,None,None,None,None),
-	(1,36,"GtkLabel","label","Messages",None,None,None,None,None),
 	(1,50,"AdwViewSwitcher","policy","wide",None,None,None,None,None),
 	(1,50,"AdwViewSwitcher","stack","29",None,None,None,None,None),
 	(1,50,"GtkWidget","halign","start",None,None,None,None,None),
 	(1,50,"GtkWidget","overflow","hidden",None,None,None,None,None),
 	(1,51,"GtkMenuButton","icon-name","open-menu-symbolic",None,None,None,None,None),
 	(1,51,"GtkMenuButton","popover","53",None,None,None,None,None),
-	(1,52,"GtkLabel","label","Gnome Phone Companion",None,None,None,None,None)
+	(1,51,"GtkWidget","hexpand","True",None,None,None,None,None),
+	(1,51,"GtkWidget","vexpand","True",None,None,None,None,None),
+	(1,55,"AdwWindowTitle","title","Gnome Phone Companion",None,None,None,None,None),
+	(1,57,"GtkWidget","hexpand","True",None,None,None,None,None),
+	(1,57,"GtkWidget","vexpand","True",None,None,None,None,None),
+	(2,16,"GtkWidget","hexpand","True",None,None,None,None,None),
+	(2,16,"GtkWidget","vexpand","True",None,None,None,None,None),
+	(2,17,"AdwLeaflet","can-navigate-back","True",None,None,None,None,None),
+	(2,18,"GtkWidget","width-request","256",None,None,None,None,None),
+	(2,19,"AdwPreferencesRow","title","Contact 1",None,None,None,None,None),
+	(2,20,"AdwPreferencesRow","title","Contact 2",None,None,None,None,None),
+	(2,21,"AdwPreferencesRow","title","Contact 3",None,None,None,None,None),
+	(2,22,"AdwLeafletPage","child",None,None,None,None,None,23),
+	(2,22,"AdwLeafletPage","navigatable","False",None,None,None,None,None),
+	(2,24,"GtkLabel","label","A Label",None,None,None,None,None),
+	(2,24,"GtkWidget","hexpand","True",None,None,None,None,None),
+	(2,24,"GtkWidget","vexpand","True",None,None,None,None,None)
   </object_property>
 </cambalache-project>

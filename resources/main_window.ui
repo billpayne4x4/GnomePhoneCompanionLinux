@@ -26,14 +26,16 @@
                   </object>
                 </child>
                 <child type="title">
-                  <object class="GtkLabel">
-                    <property name="label">Gnome Phone Companion</property>
+                  <object class="AdwWindowTitle">
+                    <property name="title">Gnome Phone Companion</property>
                   </object>
                 </child>
                 <child type="end">
                   <object class="GtkMenuButton">
+                    <property name="hexpand">True</property>
                     <property name="icon-name">open-menu-symbolic</property>
                     <property name="popover">main_menu</property>
+                    <property name="vexpand">True</property>
                   </object>
                 </child>
                 <child type="end">
@@ -46,9 +48,7 @@
                 <child>
                   <object class="AdwViewStackPage">
                     <property name="child">
-                      <object class="GtkLabel">
-                        <property name="label">Contacts</property>
-                      </object>
+                      <object class="GtkBox" id="contacts_placeholder"/>
                     </property>
                     <property name="icon-name">avatar-default-symbolic</property>
                   </object>
@@ -57,8 +57,9 @@
                   <object class="AdwViewStackPage">
                     <property name="badge-number">3</property>
                     <property name="child">
-                      <object class="GtkLabel">
-                        <property name="label">Messages</property>
+                      <object class="GtkBox" id="messages_placeholder">
+                        <property name="hexpand">True</property>
+                        <property name="vexpand">True</property>
                       </object>
                     </property>
                     <property name="icon-name">user-available-symbolic</property>
@@ -72,4 +73,5 @@
     </child>
   </template>
   <object class="GtkPopover" id="main_menu"/>
+  <object class="AdwLeafletPage"/>
 </interface>

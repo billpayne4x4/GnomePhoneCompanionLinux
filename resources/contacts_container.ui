@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.10.3 -->
+<interface>
+  <requires lib="gtk" version="4.6"/>
+  <requires lib="libadwaita" version="1.1"/>
+  <object class="GtkBox">
+    <property name="hexpand">True</property>
+    <property name="vexpand">True</property>
+    <child>
+      <object class="AdwLeaflet" id="leaflet">
+        <property name="can-navigate-back">True</property>
+        <child>
+          <object class="GtkListBox">
+            <property name="width-request">256</property>
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Contact 1</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Contact 2</property>
+              </object>
+            </child>
+            <child>
+              <object class="AdwActionRow">
+                <property name="title">Contact 3</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="AdwLeafletPage">
+            <property name="child">
+              <object class="GtkSeparator"/>
+            </property>
+            <property name="navigatable">False</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="hexpand">True</property>
+            <property name="label">A Label</property>
+            <property name="vexpand">True</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
