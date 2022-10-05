@@ -1,11 +1,10 @@
 use adw::{
     gio, glib, subclass::prelude::*,
-
-};
-
-use gtk::{
-CompositeTemplate,prelude::*,subclass::prelude::*,
-glib::{Object, subclass::InitializingObject}
+    gtk,
+    glib::Object,
+    gtk::{
+        CompositeTemplate,prelude::*,subclass::prelude::*,
+    },
 };
 
 use crate::ui;
@@ -76,7 +75,7 @@ impl MainWindow {
         let leaflet = contacts_page.imp().leaflet.get();
         println!("self type: {}", print_type_of(&self));
 
-        let mut placeholder = &self.imp().contacts_placeholder.get();
+        let placeholder = &self.imp().contacts_placeholder.get();
 
         placeholder.append(&leaflet);
     }

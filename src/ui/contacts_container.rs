@@ -1,9 +1,11 @@
-use adw::subclass::prelude::*;
-use gtk::{
-    CompositeTemplate,gio,glib,
-    prelude::*,
-    subclass::prelude::*,
-    glib::{Object,subclass::InitializingObject},
+use adw::{
+    gtk, subclass::prelude::*,
+    gtk::{
+        CompositeTemplate,glib,
+        prelude::*,
+        subclass::prelude::*,
+        glib::{Object,subclass::InitializingObject},
+    },
 };
 
 pub(crate) mod template {
